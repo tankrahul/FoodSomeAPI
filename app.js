@@ -1,3 +1,4 @@
+
 var express = require('express');
 var fs = require('fs');
 var http = require('http');
@@ -6,6 +7,7 @@ var util = require('util'); // mathematical operation karva hoy to aeno use thai
 var bodyParser = require('body-parser');
 // var jsonParser = bodyParser.json();
 var methodOverride = require('method-override');
+
 var mongoose = require('mongoose');
 var app = express();
 var routes = require('./routes');
@@ -15,6 +17,8 @@ var database = require('./config/database'); 	// Get configuration file
 mongoose.Promise = require('bluebird');
 var multipart = require('connect-multiparty');
 var cookieParser = require('cookie-parser');
+
+
 var cookieSession = require('cookie-session');
 
 mongoose.connect(database.url);
